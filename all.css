@@ -57,7 +57,8 @@
     height: 50px;
 }
 
-.item1 {
+.item1,
+.item2 {
     display: flex;
     height: 50px;
     background: #a2caff;
@@ -65,7 +66,8 @@
     text-align: center;
 }
 
-.item1 h3 {
+.item1 h3,
+.item2 h3 {
     margin: auto 0;
     padding-left: 10px;
 }
@@ -186,4 +188,16 @@
         padding: 5%;
     }
 
+}
+
+
+
+
+for (let i=2; i < 6; i++) {
+    let information=data2[i];
+    let h2=document.createElement("h2");
+    let stitle=document.createTextNode(information.stitle);
+    h2.appendChild(stitle);
+    let element=document.querySelector(".title");
+    element.appendChild(h2);
 }
