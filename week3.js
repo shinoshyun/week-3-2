@@ -14,10 +14,11 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
         //把stitle放進h3內
         h3.appendChild(stitle);
 
-        //找到HTML中 item1的位置
+        //找到HTML中 item的位置，把item變成一個變數
         let element = document.querySelector(`.item${i + 1}`);
 
         //把剛剛取出的h3再放進去
         element.appendChild(h3);
     }
+
 })
