@@ -189,15 +189,3 @@
     }
 
 }
-
-
-
-
-for (let i=2; i < 6; i++) {
-    let information=data2[i];
-    let h2=document.createElement("h2");
-    let stitle=document.createTextNode(information.stitle);
-    h2.appendChild(stitle);
-    let element=document.querySelector(".title");
-    element.appendChild(h2);
-}
