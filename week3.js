@@ -10,8 +10,8 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
         h2.appendChild(stitle);
         console.log(h2);
 
-        // let element = document.getElementById('title');
-        // element.appendChild("h2");
+        let element = document.getElementById('title');
+        element.appendChild("h2");
     }
 
 })
