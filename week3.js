@@ -54,5 +54,3 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
     }
 })
 
-// for (i = 2, j = 0; i < data2.length, j > 2; i++, j++) {
-
