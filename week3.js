@@ -6,6 +6,7 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
 
     //i<2 取到前兩筆放入information內
     for (let i = 0; i < 2; i++) {
+
         let information = data2[i].stitle;
 
         let jpg = data2[i].file.replace(/jpg/gi, "jpg").split(".jpg")[0] + ".jpg";
