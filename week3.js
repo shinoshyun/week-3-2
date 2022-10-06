@@ -22,7 +22,6 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
         let element = document.querySelectorAll(".item1");
         element[i].appendChild(imgSrc);
         element[i].appendChild(h3);
-
     }
 
 
