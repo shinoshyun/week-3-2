@@ -57,8 +57,7 @@
     height: 50px;
 }
 
-.item1,
-.item2 {
+.item1 {
     display: flex;
     height: 50px;
     background: #a2caff;
@@ -66,8 +65,7 @@
     text-align: center;
 }
 
-.item1 h3,
-.item2 h3 {
+.item1 h3 {
     margin: auto 0;
     padding-left: 10px;
 }
@@ -81,21 +79,27 @@
     margin: 0 auto;
 }
 
-.box1,
-.box2 {
+.box1 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box2 {
     margin-top: 15px;
 }
 
+
 .title {
     width: 24%;
     text-align: center;
     justify-content: center;
     background: #a2caff;
+    margin-bottom: 1%;
+}
+
+.title:nth-of-type(4n + 2) {
+    margin-right: 0;
 }
 
 .title h2 {
