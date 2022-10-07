@@ -45,7 +45,7 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
         title.appendChild(imgSrc);
         title.appendChild(h2);
 
-
+        //  下面的方法只會  你有生成幾個box就跑幾個
         // let element = document.querySelectorAll(".box1");
         // element.appendChild(title)
 
