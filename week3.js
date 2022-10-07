@@ -47,7 +47,7 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
 
 
         // let element = document.querySelectorAll(".box1");
-        // element[i - 2].appendChild(title)
+        // element.appendChild(title)
 
         //選擇一個點讓加進去就好
         let element = document.querySelector(".box1");
