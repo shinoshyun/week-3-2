@@ -9,7 +9,7 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
 
         let information = data2[i].stitle;
 
-        let jpg = data2[i].file.replace(/jpg/gi, "jpg").split(".jpg")[0] + ".jpg";
+        let jpg = data2[i].file.toLowerCase().split(".jpg")[0] + ".jpg";
         let imgSrc = document.createElement("img");
         imgSrc.setAttribute("src", jpg);
 
@@ -28,7 +28,7 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
     for (i = 2; i < 10; i++) {
         let information = data2[i].stitle;
 
-        let jpg = data2[i].file.replace(/jpg /gi, "jpg").split(".jpg")[0] + ".jpg";
+        let jpg = data2[i].file.toLowerCase().split(".jpg")[0] + ".jpg";
         let imgSrc = document.createElement("img");
         imgSrc.setAttribute("src", jpg);
 
@@ -38,10 +38,22 @@ fetch("https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assi
         h2.appendChild(stitle);
 
 
-        let elements = document.querySelectorAll(".title");
-        elements[i - 2].appendChild(imgSrc);
-        elements[i - 2].appendChild(h2);
+        let title = document.createElement("div");
 
+        title.className = "title";
+
+        title.appendChild(imgSrc);
+        title.appendChild(h2);
+
+
+        // let element = document.querySelectorAll(".box1");
+        // element[i - 2].appendChild(title)
+
+        //選擇一個點讓加進去就好
+        let element = document.querySelector(".box1");
+        element.appendChild(title);
     }
+
+
 })
 
